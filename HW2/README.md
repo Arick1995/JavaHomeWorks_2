@@ -10,6 +10,6 @@
 [Homework2_1](https://github.com/Arick1995/JavaHomeWorks_2/blob/master/HW2/HomeWork2_1.md)
 
 ## Q2
-[Homework2_2](https://raw.githubusercontent.com/Arick1995/JavaHomeWorks_2/master/HW1/Employee.md)
+[Homework2_2](https://github.com/Arick1995/JavaHomeWorks_2/blob/master/HW2/HomeWork2_2.md)
 
-[test]
+[test](https://github.com/Arick1995/JavaHomeWorks_2/blob/master/HW2/HomeWork2_2_test.md)
