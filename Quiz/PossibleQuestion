@@ -1,0 +1,56 @@
+                                
+
+
+1.	Complete following Java program to push a vale or pop a value according to the strings “push” and “pop”in arrays a and b, and print the corresponding messages as discussed in class.  The generic class Stack3 is given, which is implemented by an ArrayList.  ArrayList can be imported.  (50%)
+
+import java.util.ArrayList;
+
+class Stack3< T >  
+{
+   private ArrayList< T > elements; // ArrayList stores stack elements
+
+   // no-argument constructor creates a stack of the default size
+   public Stack3()
+   {
+      this( 10 ); // default stack size
+   } // end no-argument Stack constructor
+   
+   // constructor creates a stack of the specified number of elements
+   public Stack3( int capacity )
+   {
+      int initCapacity = capacity > 0 ? capacity : 10; // validate
+      elements = new ArrayList< T >( initCapacity ); // create ArrayList
+   } // end one-argument Stack constructor
+
+   // push element onto stack
+   public void push( T pushValue )
+   {
+      elements.add( pushValue ); // place pushValue on Stack
+   } // end method push
+
+   // return the top element if not empty; else throw EmptyStackException
+   public T pop()
+   {
+      if ( elements.isEmpty() ) // if stack is empty
+        System.exit(1);
+    
+      // remove and return top element of Stack
+      return elements.remove( elements.size() - 1 ); 
+   } // end method pop
+} // end class Stack< T >
+
+
+public class StackTest_3 
+{
+   public static void main( String[] args ) 
+   {
+     Stack3< Integer > integerStack = new Stack3< Integer >(); 
+     Stack3< Double > doubleStack = new Stack3< Double >(); 
+     String[] a = {"push", "12", "push", "33", "pop", "pop"};
+     String[] b = {"push", "1.2", "push", "3.3", "pop", "pop", "push", "6.3", "pop"};
+     Integer v;  
+     Double w;
+    
+     . . .
+
+}   
